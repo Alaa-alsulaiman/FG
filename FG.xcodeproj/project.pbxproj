@@ -28,6 +28,10 @@
 		ABFC066429533C50004E7305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066329533C50004E7305 /* AppDelegate.swift */; };
 		ABFC066629533E4C004E7305 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066529533E4C004E7305 /* profile.swift */; };
 		ABFC066829533F00004E7305 /* Editpassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066729533F00004E7305 /* Editpassword.swift */; };
+		C5BC7D91295350F5003A05F1 /* SIGNUPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7D90295350F5003A05F1 /* SIGNUPView.swift */; };
+		C5BC7D9329535122003A05F1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7D9229535122003A05F1 /* LoginView.swift */; };
+		C5BC7D952953516D003A05F1 /* onboardingFGG.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7D942953516D003A05F1 /* onboardingFGG.swift */; };
+		C5BC7D9729535236003A05F1 /* cloudKituser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7D9629535236003A05F1 /* cloudKituser.swift */; };
 		CF0F3DFF2952048400DB8552 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F3DFE2952048400DB8552 /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +77,10 @@
 		ABFC066329533C50004E7305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFC066529533E4C004E7305 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		ABFC066729533F00004E7305 /* Editpassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editpassword.swift; sourceTree = "<group>"; };
+		C5BC7D90295350F5003A05F1 /* SIGNUPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIGNUPView.swift; sourceTree = "<group>"; };
+		C5BC7D9229535122003A05F1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C5BC7D942953516D003A05F1 /* onboardingFGG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboardingFGG.swift; sourceTree = "<group>"; };
+		C5BC7D9629535236003A05F1 /* cloudKituser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cloudKituser.swift; sourceTree = "<group>"; };
 		CF0F3DFE2952048400DB8552 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +151,10 @@
 				ABFC065F29533B6A004E7305 /* ImagePicker.swift */,
 				3021B4302945FCE000C07DCC /* Assets.xcassets */,
 				3021B4322945FCE000C07DCC /* Preview Content */,
+				C5BC7D90295350F5003A05F1 /* SIGNUPView.swift */,
+				C5BC7D9229535122003A05F1 /* LoginView.swift */,
+				C5BC7D942953516D003A05F1 /* onboardingFGG.swift */,
+				C5BC7D9629535236003A05F1 /* cloudKituser.swift */,
 			);
 			path = FG;
 			sourceTree = "<group>";
@@ -304,8 +316,11 @@
 			files = (
 				ABFC066029533B6A004E7305 /* ImagePicker.swift in Sources */,
 				ABFC066229533BDB004E7305 /* SceneDelegate.swift in Sources */,
+				C5BC7D91295350F5003A05F1 /* SIGNUPView.swift in Sources */,
 				ABFC066829533F00004E7305 /* Editpassword.swift in Sources */,
+				C5BC7D9729535236003A05F1 /* cloudKituser.swift in Sources */,
 				30262E1F294B6BFF006540CD /* Guider.swift in Sources */,
+				C5BC7D952953516D003A05F1 /* onboardingFGG.swift in Sources */,
 				ABFC066429533C50004E7305 /* AppDelegate.swift in Sources */,
 				CF0F3DFF2952048400DB8552 /* HomePage.swift in Sources */,
 				30A4A3F82951DCAD009E72A2 /* tabs3.swift in Sources */,
@@ -317,6 +332,7 @@
 				3021B4FE2948C15D00C07DCC /* CheckBoxView.swift in Sources */,
 				30262E182949EDE5006540CD /* Skincolor.swift in Sources */,
 				30A4A3FA2951DD51009E72A2 /* tabs4.swift in Sources */,
+				C5BC7D9329535122003A05F1 /* LoginView.swift in Sources */,
 				3021B42D2945FCDE00C07DCC /* FGApp.swift in Sources */,
 				30A4A3F4294F3F29009E72A2 /* tabs.swift in Sources */,
 			);
@@ -405,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -459,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -493,7 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -521,7 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
