@@ -87,13 +87,13 @@ struct HomePage: View {
                                 Text("★★★★")}
                             
                             Button("more") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                
                                 
                             }
-                            .frame(width: /*@START_MENU_TOKEN@*/71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: 71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0)
                             .background(customColor.myColor2)
-                           
-                              .padding(.leading, 59.0)
+                            
+                            .padding(.leading, 59.0)
                             //   .padding(.top, 37.0)
                         }
                     }.listRowBackground(customColor.myColor)
@@ -111,12 +111,13 @@ struct HomePage: View {
                                     .minimumScaleFactor(0.5)
                                 Text("★★★★")}
                             Button(" more  ") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                
                             }
-                            .frame(width: /*@START_MENU_TOKEN@*/71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: 71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0)
                             .background(customColor.myColor2)
+                            
                             .padding(.leading, 86.0)
-
+                            
                         }
                     }.listRowBackground(customColor.myColor)
                     VStack (alignment: .leading){
@@ -132,9 +133,9 @@ struct HomePage: View {
                                 Text("★★★★")}
                             
                             Button(" more  ") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                
                             }
-                            .frame(width: /*@START_MENU_TOKEN@*/71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: 71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0)
                             .background(customColor.myColor2)
                             .padding(.leading, 86.0)
                             
@@ -153,12 +154,12 @@ struct HomePage: View {
                                     .minimumScaleFactor(0.5)
                                 Text("★★★★")}
                             Button(" more  ") {
-                                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                                
                             }
-                            .frame(width: /*@START_MENU_TOKEN@*/71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0/*@END_MENU_TOKEN@*/)
+                            .frame(width: 71.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/24.0)
                             .background(customColor.myColor2)
                             .padding(.leading, 86.0)
-
+                            
                         }
                     }.listRowBackground(customColor.myColor)
                     VStack (alignment: .leading){
@@ -179,10 +180,14 @@ struct HomePage: View {
                     .navigationTitle("Our Guiders")
                     .searchable(text: $searchText)
                 
-            
+                
             } .background(customColor.myColor1)
-   
-            }
+            
+        }
+        
+        //.listStyle(.plain)
+        .background(.white)
+        .scrollContentBackground(.hidden)
         }
     }
     struct HomePage_Previews: PreviewProvider {

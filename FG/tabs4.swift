@@ -24,7 +24,7 @@ struct tabs4: View {
                         .resizable()
                         .frame(width:150, height:150)
                         .cornerRadius(17)
-                    Text("Emma Wilson ")
+                    Text("Adam Smith ")
                     .font(.title.bold())}
                     VStack{
                         Text("Stylist")
