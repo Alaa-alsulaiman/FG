@@ -11,7 +11,7 @@ import SwiftUI
 struct FGApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            setting()
 
         }
     }

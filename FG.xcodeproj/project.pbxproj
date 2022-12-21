@@ -22,6 +22,12 @@
 		30A4A3F62951D9EC009E72A2 /* tabs2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4A3F52951D9EC009E72A2 /* tabs2.swift */; };
 		30A4A3F82951DCAD009E72A2 /* tabs3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4A3F72951DCAD009E72A2 /* tabs3.swift */; };
 		30A4A3FA2951DD51009E72A2 /* tabs4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4A3F92951DD51009E72A2 /* tabs4.swift */; };
+		ABFC065E29533B0A004E7305 /* setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC065D29533B0A004E7305 /* setting.swift */; };
+		ABFC066029533B6A004E7305 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC065F29533B6A004E7305 /* ImagePicker.swift */; };
+		ABFC066229533BDB004E7305 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066129533BDB004E7305 /* SceneDelegate.swift */; };
+		ABFC066429533C50004E7305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066329533C50004E7305 /* AppDelegate.swift */; };
+		ABFC066629533E4C004E7305 /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066529533E4C004E7305 /* profile.swift */; };
+		ABFC066829533F00004E7305 /* Editpassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFC066729533F00004E7305 /* Editpassword.swift */; };
 		CF0F3DFF2952048400DB8552 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0F3DFE2952048400DB8552 /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +67,12 @@
 		30A4A3F52951D9EC009E72A2 /* tabs2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabs2.swift; sourceTree = "<group>"; };
 		30A4A3F72951DCAD009E72A2 /* tabs3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabs3.swift; sourceTree = "<group>"; };
 		30A4A3F92951DD51009E72A2 /* tabs4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabs4.swift; sourceTree = "<group>"; };
+		ABFC065D29533B0A004E7305 /* setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setting.swift; sourceTree = "<group>"; };
+		ABFC065F29533B6A004E7305 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ABFC066129533BDB004E7305 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ABFC066329533C50004E7305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ABFC066529533E4C004E7305 /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		ABFC066729533F00004E7305 /* Editpassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Editpassword.swift; sourceTree = "<group>"; };
 		CF0F3DFE2952048400DB8552 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +125,8 @@
 		3021B42B2945FCDE00C07DCC /* FG */ = {
 			isa = PBXGroup;
 			children = (
+				ABFC066329533C50004E7305 /* AppDelegate.swift */,
+				ABFC065D29533B0A004E7305 /* setting.swift */,
 				CF0F3DFE2952048400DB8552 /* HomePage.swift */,
 				3021B42E2945FCDE00C07DCC /* BodyType.swift */,
 				30262E19294A00DA006540CD /* Size.swift */,
@@ -123,6 +137,10 @@
 				30A4A3F52951D9EC009E72A2 /* tabs2.swift */,
 				30A4A3F72951DCAD009E72A2 /* tabs3.swift */,
 				30A4A3F92951DD51009E72A2 /* tabs4.swift */,
+				ABFC066129533BDB004E7305 /* SceneDelegate.swift */,
+				ABFC066729533F00004E7305 /* Editpassword.swift */,
+				ABFC066529533E4C004E7305 /* profile.swift */,
+				ABFC065F29533B6A004E7305 /* ImagePicker.swift */,
 				3021B4302945FCE000C07DCC /* Assets.xcassets */,
 				3021B4322945FCE000C07DCC /* Preview Content */,
 			);
@@ -284,12 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFC066029533B6A004E7305 /* ImagePicker.swift in Sources */,
+				ABFC066229533BDB004E7305 /* SceneDelegate.swift in Sources */,
+				ABFC066829533F00004E7305 /* Editpassword.swift in Sources */,
 				30262E1F294B6BFF006540CD /* Guider.swift in Sources */,
+				ABFC066429533C50004E7305 /* AppDelegate.swift in Sources */,
 				CF0F3DFF2952048400DB8552 /* HomePage.swift in Sources */,
 				30A4A3F82951DCAD009E72A2 /* tabs3.swift in Sources */,
 				30A4A3F62951D9EC009E72A2 /* tabs2.swift in Sources */,
 				3021B42F2945FCDE00C07DCC /* BodyType.swift in Sources */,
 				30262E1A294A00DA006540CD /* Size.swift in Sources */,
+				ABFC066629533E4C004E7305 /* profile.swift in Sources */,
+				ABFC065E29533B0A004E7305 /* setting.swift in Sources */,
 				3021B4FE2948C15D00C07DCC /* CheckBoxView.swift in Sources */,
 				30262E182949EDE5006540CD /* Skincolor.swift in Sources */,
 				30A4A3FA2951DD51009E72A2 /* tabs4.swift in Sources */,
