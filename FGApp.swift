@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct FGApp: App {
     var body: some Scene {
+        
+        
+        
+        
         WindowGroup {
-            setting()
-
+            onboardingFGG()
         }
     }
 }

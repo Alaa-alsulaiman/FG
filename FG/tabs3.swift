@@ -36,7 +36,10 @@ struct tabs3: View {
                     VStack{
                         Text("Stylist")
                             .font(.title3)
-                        .foregroundColor(.gray)}
+                        .foregroundColor(.gray)
+                        
+                        
+                    }
                     .offset(x:160,y:-60)
                 
                 

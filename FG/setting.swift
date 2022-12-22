@@ -9,9 +9,9 @@ import SwiftUI
 
 
 struct setting: View {
-    @State var name = ""
-    @State var email = ""
-    @State var password = ""
+    @State var name = "sara"
+    @State var email = "sara@gmail.com"
+    @State var password = "********"
     @State private var showSheet: Bool = false
     @State private var showImagePicker: Bool = false
     @State private var sourceType: UIImagePickerController.SourceType = .camera
@@ -39,11 +39,11 @@ struct setting: View {
                                     .frame(width: 130, height: 130)
                                     .clipShape(RoundedRectangle(cornerRadius: 200))
                                 
-                                
+                               
                                 
                                 ZStack{
                                 RoundedRectangle(cornerRadius: 25)
-                                    .fill(.orange)
+                                    .fill(Color("Color 3"))
                                     .frame(width:180, height: 40)
                                 
                                 
@@ -52,6 +52,7 @@ struct setting: View {
                                         
                                     }
                                     .foregroundColor(.white)
+                                   
                                 }}}
                     .padding()
                     
@@ -74,61 +75,78 @@ struct setting: View {
                     }
                     
                 }
-                    VStack{
-                        TextField("Name", text: $name)
-                            .padding()
+                    VStack (alignment: .leading){
+                        
+                       
+                        HStack {
+                            Text("Name:")
+
+                            Spacer()
+
+                            TextField("", text: $name).foregroundColor(.gray)
+                        }
+//
                             .frame(width: 310, height: 35)
                             .background(Color.white)
-                        
-                        TextField("Email", text: $email)
-                            .padding()
-                            .frame(width: 310, height: 35)
-                            .background(Color.white)
-                        
-                        
-                        TextField("Password:", text: $password
-                        )
-                        .padding()
-                        .frame(width: 310, height: 35)
-                        .background(Color.white)
-                        
-                    }
-                }
-                VStack{
+                            
+                        HStack {
+                            Text("Email:")
+
+                            Spacer()
+
+                            TextField("", text: $email).foregroundColor(.gray)
+                        }
+                            
+                                .frame(width: 310, height: 35)
+                                .background(Color.white)
+                            
+                            
+                        HStack {
+                            Text("New password:")
+
+                            Spacer()
+
+                            TextField("", text: $password).foregroundColor(.gray)
+                        }
+                            
+                                .frame(width: 310, height: 35)
+                                .background(Color.white)
                     
-                    Button("Edit password") {
-                     
-                    }
-                    .foregroundColor(.orange)
-                    
-                    .padding(.top, 193.0)
-                }
-                
-                
-                
-                ZStack{
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(.orange)
-                        .frame(width:180, height: 40)
-                    Button("Edit personal info") {
+                        NavigationLink{
+                           BodyType()
+                        }label: {
+                            Text("Edit personal Info")
+                        }.foregroundColor(Color("Color 3"))
                         
-                    }
-                    .foregroundColor(.white)
-                }
-                
-                    .padding(.top, 337.0)
-                    .padding(.leading, 1.0)
-                HStack{  Image(systemName: "phone.fill")
-                        .foregroundColor(.gray)
-                        .font(.title2)
-                        .padding(.top, 499.0)
+                        HStack{  Image(systemName: "phone.fill")
+                                .foregroundColor(Color("Color 3"))
+                              
+                               
+                            Text("Contact Us")
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color("Color 3"))
+                               
+                            
+                              
+                                
+                        } .padding(.top,20)
                         
-                    Text("Contact")
-                        .font(.body)
-                        .foregroundColor(.gray)
-                        .padding(.top, 500.0)
-                        .padding(.trailing, 220.0)
+                            
+                        Button("Save Change") {
+                           // isCancel12 = true
+                        }
+                        .foregroundColor(.black)
+                        .frame(width: 310, height: 44)
+                        .background(Color("Color 3"))
+                        .cornerRadius(5)
+                        .padding(.top, 55)
+                    }.padding(.top, 150)
+                 
                 }
+               
+                
+                   
+                
                 .navigationBarTitle("Settings")
                 
                 .sheet(isPresented: $showImagePicker) {

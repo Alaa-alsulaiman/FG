@@ -140,6 +140,6 @@ struct BodyType: View {
 
 struct BodyType_Previews: PreviewProvider {
     static var previews: some View {
-        BodyType() 
+        BodyType()
     }
 }

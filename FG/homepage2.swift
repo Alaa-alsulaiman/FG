@@ -8,12 +8,12 @@
 import SwiftUI
 
 
-struct Box: Hashable {
+struct Box1: Hashable {
 
 let imageURL : String
 }
 
-struct HomePage: View {
+struct HomePage2: View {
     
     struct customColor{
         static let myColor = Color("movC")
@@ -23,27 +23,28 @@ struct HomePage: View {
     }
     @State private var searchText = ""
     
-    let boxes : [Box] = [
-    Box(imageURL: "logo"),
-    Box(imageURL: "logo"),
-    Box(imageURL: "logo"),
-    Box(imageURL: "logo"),
-    Box(imageURL: "logo")
+    let boxes : [Box1] = [
+    Box1(imageURL: "logo"),
+    Box1(imageURL: "logo"),
+    Box1(imageURL: "logo"),
+    Box1(imageURL: "logo"),
+    Box1(imageURL: "logo")
     ]
     
     var body: some View{
-        
+ 
+    
+
         
         NavigationView{
             
             
-            
-            
+
             
             VStack {
                 
                 
-                
+            
                 
                 
                 
@@ -87,7 +88,7 @@ struct HomePage: View {
                                 Text("★★★★")}
                      
                             NavigationLink{
-                                LoginView()
+                                tabs4()
                             }label: {
                         
                                 Text("more")
@@ -112,7 +113,7 @@ struct HomePage: View {
                                     .minimumScaleFactor(0.5)
                                 Text("★★★★")}
                             NavigationLink{
-                                LoginView()
+                                tabs2()
                             }label: {
                         
                                 Text("more")
@@ -136,7 +137,7 @@ struct HomePage: View {
                                 Text("★★★★")}
                             
                             NavigationLink{
-                                LoginView()
+                                tabs()
                             }label: {
                         
                                 Text("more")
@@ -160,7 +161,7 @@ struct HomePage: View {
                                     .minimumScaleFactor(0.5)
                                 Text("★★★★")}
                             NavigationLink{
-                                LoginView()
+                                tabs3()
                             }label: {
                         
                                 Text("more")
@@ -193,17 +194,17 @@ struct HomePage: View {
             } .background(customColor.myColor1)
             
         }
-        
-        //.listStyle(.plain)
+    
         .background(.white)
         .scrollContentBackground(.hidden)
         }
     }
-    struct HomePage_Previews: PreviewProvider {
+    struct HomePage2_Previews: PreviewProvider {
         static var previews: some View {
-            HomePage()
+            HomePage2()
         }
     }
+
 
 
 

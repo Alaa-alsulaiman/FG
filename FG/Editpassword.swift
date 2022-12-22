@@ -29,11 +29,7 @@ struct Editpassword: View {
                     .frame(width: 310, height: 35)
                     .background(Color.white)
                     
-                    TextField("New Password:", text: $newpassword
-                    )
-                    .padding()
-                    .frame(width: 310, height: 35)
-                    .background(Color.white)
+              
                     
                     TextField("Confirm New Password:", text: $newpassword
                     )
@@ -46,21 +42,19 @@ struct Editpassword: View {
             .padding(.bottom, 200.0)
             VStack{
                 ZStack{
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(.orange)
-                        .frame(width:150, height: 40)
                     
-                        .padding(/*@START_MENU_TOKEN@*/.top, 300.0/*@END_MENU_TOKEN@*/)
                     
                     
                     Button("Save") {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
-                        .foregroundColor(.white)
-                        
-                        .padding(.top, 300.0)
+                    .foregroundColor(.black)
+                    .frame(width: 310, height: 44)
+                    .background(Color("Color 3"))
+                    .cornerRadius(5)
+                    .padding(.top, 100)
                 }  }
-            .padding(.bottom, 42.0)
+          
             
             
         }

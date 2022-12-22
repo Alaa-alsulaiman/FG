@@ -27,7 +27,9 @@ private let onBoardingSteps = [
 
 
 struct onboardingFGG: View {
+    @State var isCancel12 = false
     @State private var currentStep = 0
+    
     
     init() {
         UIScrollView.appearance().bounces = false
@@ -107,8 +109,7 @@ struct onboardingFGG: View {
                     if self.currentStep < onBoardingSteps.count - 1 {
                         self.currentStep += 1
                     } else {
-                        
-                      
+                        isCancel12 = true
                     }
                      
                     
@@ -122,13 +123,18 @@ struct onboardingFGG: View {
                         .foregroundColor(.white)
                     
                 }
+                    
+                }.fullScreenCover(isPresented: $isCancel12){
+                 HomePage()}
+                
+                
                 
             }
             .padding()
         }
     }
     
-}
+
 
 struct onboardingFGG_Previews: PreviewProvider {
     static var previews: some View {

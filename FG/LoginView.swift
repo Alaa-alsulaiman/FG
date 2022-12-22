@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-
+    @State var isCancel12 :Bool = false
     @State  var email = ""
     @State  var password = ""
     @State  var wrongEmail = 0
@@ -70,33 +70,36 @@ struct LoginView: View {
                                 
                                 
                         }
+                        VStack{
+                            Button("Login") {
+                                isCancel12 = true
+                            }
+                            .foregroundColor(.white)
+                            .frame(width: 310, height: 44)
+                            .background(Color("Color 3"))
+                            .cornerRadius(5)
+                            .padding(.top, 55)
+                            
+                        }.fullScreenCover(isPresented: $isCancel12){
+                            tapbar()
+                         }
                         
-                    Button("Login") {
-                        
-                    }
-                    .foregroundColor(.white)
-                    .frame(width: 310, height: 44)
-                    .background(Color("Color 3"))
-                    .cornerRadius(5)
-                    .padding(.top, 55)
-                        
-                        
-//
-//                        NavigationLink(destination: SIGNUPView()) {
-//
-//                            Text("SIGN UP")
-//                                .fontWeight(.bold)
-//                                .foregroundColor(Color("Color 1"))
-//                        }
+////
+////                        NavigationLink(destination: SIGNUPView()) {
+////
+////                            Text("SIGN UP")
+////                                .fontWeight(.bold)
+////                                .foregroundColor(Color("Color 1"))
+//                       }
                         
                         Button("SIGN UP") {
-              showingLonginScreen = true
+             showingLonginScreen = true
 
                         }
                         .fontWeight(.bold)
                         .foregroundColor(Color("Color 1"))
                         .fullScreenCover(isPresented: $showingLonginScreen) {
-                           // SIGNUPView()
+                            SIGNUPView()
                         }
                 }
                 
